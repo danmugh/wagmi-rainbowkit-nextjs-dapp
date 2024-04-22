@@ -4,7 +4,7 @@ import { http, createStorage, cookieStorage } from 'wagmi';
 import { sepolia, bscTestnet, blastSepolia } from 'wagmi/chains';
 import { Chain, getDefaultConfig } from '@rainbow-me/rainbowkit';
 
-const projectId = "yut2f2j99u8mbtw3";
+const projectId = "";
 
 const supportedChains: Chain[] = [ sepolia, bscTestnet, blastSepolia ];
 

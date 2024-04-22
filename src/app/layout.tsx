@@ -3,6 +3,8 @@ import "@rainbow-me/rainbowkit/styles.css";
 
 import { Inter } from "next/font/google";
 import type { Metadata } from "next";
+import { headers } from "next/headers";
+
 import Providers from "./providers";
 
 export const metadata: Metadata = {
@@ -17,6 +19,8 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const cookie = headers().get("cookie");
+
   return (
     <html lang="en">
       <body className={inter.className}>
